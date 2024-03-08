@@ -9,5 +9,5 @@
 <p align="center">
   <a href="https://linkedin.com/in/YoussefShawky0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="YoussefShawky" height="30" width="40" /></a>
   <a href="https://fb.com/YoussefShawky0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="YoussefShawky" height="30" width="40" /></a>
-<a href="https://twitter.com/YoussefShawky0" target="blank"><img align="center" src="[https://i.postimg.cc/Ghrxzsrg/twitter.png](https://i.postimg.cc/50dC0Z2K/twitter-x-seeklogo-3.png)https://i.postimg.cc/50dC0Z2K/twitter-x-seeklogo-3.png" alt="YoussefShawky" height="30" width="40" /></a>
+<a href="https://twitter.com/YoussefShawky0" target="blank"><img align="center" src="https://i.postimg.cc/50dC0Z2K/twitter-x-seeklogo-3.png" alt="YoussefShawky" height="30" width="40" /></a>
 </p>
