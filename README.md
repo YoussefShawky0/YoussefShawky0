@@ -11,3 +11,5 @@
 <a href="https://twitter.com/YoussefShawky0" target="blank"><img align="center" src="https://i.postimg.cc/nr7ZLPM2/logo-white.png" alt="YoussefShawky" height="30" width="40" /></a>
 </p>
 
+![snake gif]
+(https://github.com/YoussefShawky0/YoussefShawky0/blob/output/github-contribution-grid-snake.gif)
