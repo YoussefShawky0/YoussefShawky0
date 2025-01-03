@@ -1,5 +1,5 @@
 <h1 align="center">Hello 👋, I'm Youssef Shawky</h1>
-<a href="https://gifyu.com/image/SP63j"><img src="https://s7.gifyu.com/images/SP63j.gif" alt="Final" border="0" /></a>
+<a href="https://gifyu.com/image/SP63j"><img src="https://s7.gifyu.com/images/SP63j.gif" alt="Final" border="0" height="500" width="100%" /></a>
 
 <hr>
 
