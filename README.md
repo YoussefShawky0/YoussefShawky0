@@ -20,7 +20,6 @@
 </picture>
 </div>
 
-
 <hr>
 <h3 align="center">Connect with me: </h3>
 
