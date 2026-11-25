@@ -25,7 +25,7 @@
 ## Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,supabase,androidstudio,vscode,figma,git,github,cpp,java&perline=11" alt="Tech stack" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,supabase,androidstudio,vscode,figma,postman,git,github,cpp,java&perline=12" alt="Tech stack" />
 </p>
 
 <br />
