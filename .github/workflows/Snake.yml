@@ -1,4 +1,4 @@
-name: Generate snake animation
+name: Generate profile metrics and snake
 
 on:
   schedule:
@@ -14,18 +14,98 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
+    env:
+      # Personal access token stored as a repository secret (see README of lowlighter/metrics)
+      METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
 
     steps:
-      # Light and dark versions, picked by the README based on the viewer's theme
+      # ---------- Snake (light + dark) ----------
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?palette=github-light
-            dist/snake-dark.svg?palette=github-dark
+            dist/snake.svg?palette=github-dark
+            dist/snake-light.svg?palette=github-light
 
+      # ---------- lowlighter/metrics ----------
+      - name: Metrics - overview and calendar
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: general.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: header, activity, community, repositories
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Metrics - languages
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: languages.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: ""
+          plugin_languages: yes
+          # Flutter platform runners add C/C++/CMake/Swift code that is not hand-written
+          plugin_languages_ignored: c++, cmake, c, swift, objective-c
+          plugin_languages_details: percentage
+          plugin_languages_limit: 6
+
+      - name: Metrics - achievements
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: achievements.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_limit: 6
+
+      - name: Metrics - featured projects
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: projects.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: guess_party, bariq, BookVerse, community_chat_app
+
+      - name: Metrics - coding habits
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: habits.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          plugin_habits_days: 30
+
+      - name: Collect metrics renders
+        if: env.METRICS_TOKEN != ''
+        run: |
+          mkdir -p dist
+          sudo cp /metrics_renders/*.svg dist/
+          sudo chown -R "$(id -u)":"$(id -g)" dist
+          ls -la dist
+
+      # Everything above is published to the "output" branch, which the README reads from
       - name: Push SVGs to the output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
