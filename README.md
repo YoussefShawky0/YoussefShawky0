@@ -24,20 +24,13 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" width="49%" />
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/habits.svg" alt="Coding habits" width="49%" />
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" />
 </p>
 
 ## Featured projects
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/projects.svg" alt="Featured projects" />
-</p>
-
-## Achievements
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/achievements.svg" alt="GitHub achievements" />
 </p>
 
 <br />
