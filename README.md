@@ -10,20 +10,8 @@
 
 ## About me
 
-Flutter developer and Computer Science graduate from **Suez Canal University** (2026), based in Cairo.
-I build production mobile apps with **Clean Architecture** and **BLoC/Cubit**, integrate REST APIs (Laravel, Supabase), and turn Figma designs into responsive **English/Arabic (RTL)** interfaces.
-
-- 💼 Mobile Application Development Intern at **Pureminds AI**
-- 🎓 Graduation project **Raij**, graded **A+** and published on Google Play
-- 🌱 Interested in real-time apps, backend security with PostgreSQL RLS, and testing
-
-## Highlights
-
-**Raij** · AI-powered e-commerce app on Google Play (graduation project)<br />
-Mobile layer across 19 feature modules, multiple AI services over REST with graceful fallbacks, and a map-driven address flow with GPS and reverse geocoding.
-
-**[Guess Party](https://github.com/YoussefShawky0/guess_party)** · real-time multiplayer social-deduction game<br />
-Game state synced live with Supabase, disconnect handling and host migration, and a backend locked down with PostgreSQL RLS policies, triggers and custom functions.
+Flutter developer and Computer Science graduate, currently a Mobile Development Intern at **Pureminds AI**.<br />
+I build production mobile apps with Clean Architecture, BLoC and Supabase, with English/Arabic (RTL) support.
 
 ## GitHub stats
 
@@ -40,11 +28,6 @@ Game state synced live with Supabase, disconnect handling and host migration, an
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,supabase,androidstudio,vscode,figma,postman,git,github,cpp,java&perline=12" alt="Tech stack" />
-</p>
-
-<p align="center">
-  <b>Architecture</b> · Clean Architecture · BLoC/Cubit · MVVM · GetIt · go_router<br />
-  <b>Data</b> · REST APIs · Dio · Supabase · Firebase · PostgreSQL & RLS · Hive
 </p>
 
 <br />
