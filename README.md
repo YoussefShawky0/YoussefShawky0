@@ -18,8 +18,8 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/calendar.svg" alt="Contribution calendar" width="49%" />
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" width="49%" />
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/calendar.svg" alt="Contribution calendar" width="49%" align="top" />
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" width="49%" align="top" />
 </p>
 
 ## Tech stack
