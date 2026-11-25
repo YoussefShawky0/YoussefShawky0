@@ -30,15 +30,25 @@ jobs:
             dist/snake-light.svg?palette=github-light
 
       # ---------- lowlighter/metrics ----------
-      - name: Metrics - overview and calendar
+      - name: Metrics - overview
         if: env.METRICS_TOKEN != ''
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: general.svg
+          filename: overview.svg
           output_action: none
           config_timezone: Africa/Cairo
-          base: header, activity, community, repositories
+          base: header, activity, community
+
+      - name: Metrics - contribution calendar
+        if: env.METRICS_TOKEN != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: calendar.svg
+          output_action: none
+          config_timezone: Africa/Cairo
+          base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
@@ -56,18 +66,6 @@ jobs:
           plugin_languages_ignored: c++, cmake, c, swift, objective-c
           plugin_languages_details: percentage
           plugin_languages_limit: 6
-
-      - name: Metrics - featured projects
-        if: env.METRICS_TOKEN != ''
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: projects.svg
-          output_action: none
-          config_timezone: Africa/Cairo
-          base: ""
-          plugin_repositories: yes
-          plugin_repositories_featured: guess_party, bariq, BookVerse, community_chat_app
 
       - name: Collect metrics renders
         if: env.METRICS_TOKEN != ''

@@ -11,26 +11,21 @@
   Software engineer building cross-platform mobile apps with <b>Flutter</b>, backed by <b>Firebase</b> and <b>Supabase</b>.
 </p>
 
+## GitHub stats
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/overview.svg" alt="GitHub overview" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/calendar.svg" alt="Contribution calendar" width="49%" />
+  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" width="49%" />
+</p>
+
 ## Tech stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,supabase,androidstudio,vscode,figma,git,github,cpp,java&perline=11" alt="Tech stack" />
-</p>
-
-## GitHub metrics
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/general.svg" alt="GitHub overview and contribution calendar" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/languages.svg" alt="Most used languages" />
-</p>
-
-## Featured projects
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YoussefShawky0/YoussefShawky0/output/projects.svg" alt="Featured projects" />
 </p>
 
 <br />
